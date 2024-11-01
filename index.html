@@ -9,25 +9,120 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo-titulo">
-            <!-- logo, titulo y frase -->
-            <div>
-                <a href="#">
-                    <img src="./assets/img/logo.png" alt="logo"> 
+    <header class="header"> <!-- Header -->
+        <div class="contenedor-ltf"> <!-- logo, titulo y frase --> 
+                <a href="../index.html">
+                    <img class="logo" src="../assets/img/logo.png" alt="logo">
                 </a>
+            <div class="contenedor-tf">
+                <p class="titulo-sitio">VERDE & DECORACIÓN</p>
+                <p class="frase-sitio">Naturaleza verde, diseño que inspira...</p>
             </div>
-            <div class="titulo-sitio">
-                <p>VERDE & DECORACIÓN</p>
-            </div>  
-            <div class="frase-sitio"> 
-                <p>Naturaleza verde, diseño que inspira...</p>
+        </div> 
+                   
+             <nav>                     <!-- barra de menu -->
+                <ul class="navbar">
+                    <li class="caja-menu-vista"><a href="#">Inicio</a></li> <!-- es la vista en la que estoy -->
+                    <li class="caja-menu"><a href="./pages/productos.html">Productos</a></li>
+                    <li class="caja-menu"><a href="./pages/servicios.html">Servicios</a></li>
+                    <li class="caja-menu"><a href="./pages/informacion.html">Información</a></li>
+                    <li class="caja-menu"><a href="./pages/contacto.html">Contacto</a></li>
+                    <li class="caja-menu-carrito"><a href="./pages/carrito.html"><img src="../assets/img/carrito.png" alt="Imagen de Carrito de compras"></a></li> 
+                </ul>
+            </nav>
+        
+    </header>
+  
+
+    
+    <main>                          <!-- Main -->
+        <section>
+            <div class="descripcion">
+                <p>
+                    En Verde & Decoración, traemos la belleza de la naturaleza directamente a tu hogar o espacio de trabajo,
+                    <br> 
+                    con nuestras exclusivas plantas en vasijas de cristal y kokedamas, 
+                    <br>
+                    además de ofrecerte servicios profesionales de jardinería.    
+                </p>
+                
+            </div>
+        </section>
+        <section>
+           
+                <div class="elegirnos">
+                    <h1>Por qué elegirnos</h1>
+                </div>
+            <div class="cualidades">
+                <article class="cualidad">
+                    <div class="cualidad-imgtx">
+                        <img src="./assets/img/trayectoria-profesional.png" alt="Imagen que simboliza experiencia">
+                        <h2>Experiencia</h2>
+                    </div>
+                    <div> 
+                        <p> En Verde & Decoración nos avalan 15 años de experiencia, dedicación y contínuo aprendizaje. </p>
+                        <p> Recibirás lo mejor de la naturaleza, con la calidad y respaldo que te mereces.</p>
+                    </div>
+                </article>
+                <article class="cualidad">
+                    <div class="cualidad-imgtx">
+                        <img src="./assets/img/atencion.png" alt="Imagen que simboliza atención personalizada">
+                        <h2>Atención post venta</h2>
+                    </div>
+                    <div>
+                        
+                        <p>Nuestro compromiso no termina con la compra, ya que ofrecemos atención post-venta personalizada para guiarte en el cuidado y mantenimiento de tus plantas.</p>
+                    </div>
+                </article>
+                <article class="cualidad">
+                    <div class="cualidad-imgtx">
+                        <img src="./assets/img/servicio-de-calidad.png" alt="Imagen que simboliza compromiso con la calidad">
+                        <h2>Calidad</h2>
+                    </div>
+                    <div>
+                        
+                        <p>Todas nuestras plantas cuentan con certificaciones de calidad y son cuidadas por expertos, garantizando que cada una esté en óptimas condiciones.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+     <!-- Footer -->
+     <footer>
+        <div class="footer">
+            <div class="boton-inicio">
+                <a href="./index.html">Inicio</a>
+            </div>
+            <div class="redes">
+                <ul class="links">
+                    
+                        <li>
+                            <a href="https://www.instagram.com/"><img src="./assets/img/instagram.png" alt="Icono de Instagram"></a>
+                        </li> 
+                    
+                    
+                        <li>
+                            <a href="https://www.facebook.com/"><img src="./assets/img/facebook.png" alt="Icono de Facebook"></a>
+                        </li>
+                    
+                    
+                        <li>
+                            <a href="https://x.com/home"><img src="./assets/img/x.png" alt="Icono de X"></a>
+                        </li>
+                    
+                    
+                        <li>
+                            <a href="https://wa.me/1XXXXXXXXXX"><img src="./assets/img/whatsapp.png" alt="Icono de Whatsapp"></a>
+                        </li>
+                    
+                </ul>
             </div>
         </div>
-        <div>
-             <!-- barra de menu -->
-            <nav>
+     </footer>
+</body>
+
+<!-- quitar los div del ul
+            <nav> 
                 <ul class="navbar">
                     <div class="caja-menu-vista">
                         <li><a href="#">Inicio</a></li>
@@ -48,91 +143,6 @@
                         <li><a href="./pages/carrito.html"><img src="./assets/img/carrito.png" alt="Imagen de Carrito de compras"></a></li>
                     </div> 
                 </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- Main -->
-    <main>
-        <section>
-            <div class="descripcion">
-                <p>
-                    En Verde & Decoración, traemos la belleza de la naturaleza directamente a tu hogar o espacio de trabajo,
-                    <br> 
-                    con nuestras exclusivas plantas en vasijas de cristal y kokedamas, 
-                    <br>
-                    además de ofrecerte servicios profesionales de jardinería.    
-                </p>
-                <p>Nuevo texto para git</p>
-            </div>
-        </section>
-        <section>
-           
-                <div class="elegirnos">
-                    <h1>Por qué elegirnos</h1>
-                </div>
-         
-            <article class="cualidades">
-                <div>
-                    <img src="./assets/img/trayectoria-profesional.png" alt="Imagen que simboliza experiencia">
-                </div>
-                <div>
-                    <h2>Experiencia</h2>
-                    <p>Texto</p>
-                </div>
-            </article>
-            <article class="cualidades">
-                <div>
-                    <img src="./assets/img/atencion.png" alt="Imagen que simboliza atención personalizada">
-                </div>
-                <div>
-                    <h2>Atención post venta</h2>
-                    <p>Texto</p>
-                </div>
-            </article>
-            <article class="cualidades">
-                <div>
-                    <img src="./assets/img/servicio-de-calidad.png" alt="Imagen que simboliza compromiso con la calidad">
-                </div>
-                <div>
-                    <h2>Calidad</h2>
-                    <p>Texto</p>
-                </div>
-            </article>
-
-        </section>
-    </main>
-     <!-- Footer -->
-     <footer>
-        <div class="footer">
-            <div class="boton-inicio">
-                <a href="./index.html">Inicio</a>
-            </div>
-            <div class="redes">
-                <ul class="links">
-                    <div>
-                        <li>
-                            <a href="https://www.instagram.com/"><img src="./assets/img/instagram.png" alt="Icono de Instagram"></a>
-                        </li> 
-                    </div>
-                    <div>
-                        <li>
-                            <a href="https://www.facebook.com/"><img src="./assets/img/facebook.png" alt="Icono de Facebook"></a>
-                        </li>
-                    </div>
-                    <div>
-                        <li>
-                            <a href="https://x.com/home"><img src="./assets/img/x.png" alt="Icono de X"></a>
-                        </li>
-                    </div>
-                    <div>
-                        <li>
-                            <a href="https://wa.me/1XXXXXXXXXX"><img src="./assets/img/whatsapp.png" alt="Icono de Whatsapp"></a>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-        </div>
-     </footer>
-</body>
-
+            </nav> 
+            -->
 </html>

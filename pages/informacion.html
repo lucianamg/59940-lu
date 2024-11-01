@@ -9,115 +9,152 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo-titulo">
-            <!-- logo, titulo y frase -->
-            <div>
-                <a href="../index.html">
-                    <img src="../assets/img/logo.png" alt="logo">
-                </a>
+    <header class="header">
+        <!-- Contenedor logo, título y frase (contenedor-ltf) -->
+        <div class="contenedor-ltf">
+            <input type="checkbox" id="menu-hamburguesa" class="checkbox-menu-hamburguesa">
+            <label for="menu-hamburguesa" class="hamburguesa-label">
+                <img src="../assets/img/hamburger-icon.png" alt="Menu" class="hamburger-icon">
+            </label>
+
+            
+            
+            <a href="../index.html">
+                <img class="logo" src="../assets/img/logo.png" alt="logo">
+            </a>
+
+            <div class="contenedor-tf">
+                <p class="titulo-sitio">VERDE & DECORACIÓN</p>
+                <p class="frase-sitio">Naturaleza verde, diseño que inspira...</p>
             </div>
-            <div class="titulo-sitio">
-                <p>VERDE & DECORACIÓN</p>
-            </div>  
-            <div class="frase-sitio"> 
-                <p>Naturaleza verde, diseño que inspira...</p>
-            </div>
+        
         </div>
-        <div>
-             <!-- barra de menu -->
-            <nav>
+        
+        <!-- Menú para resoluciones mayores a 520px -->
+        <nav class="navbar-container">
+            <ul class="navbar">
+                <li class="caja-menu"><a href="../index.html">Inicio</a></li>
+                <li class="caja-menu"><a href="./productos.html">Productos</a></li>
+                <li class="caja-menu"><a href="./servicios.html">Servicios</a></li>
+                <li class="caja-menu-vista"><a href="#">Información</a></li>
+                <li class="caja-menu"><a href="./contacto.html">Contacto</a></li>
+                <li class="caja-menu-carrito"><a href="./carrito.html"><img src="../assets/img/carrito.png" alt="Imagen de Carrito de compras"></a></li> 
+            </ul>
+        </nav>
+        
+        <!-- Barra info y carrito para menos de 520 -->
+        <div class="navbar-info-container">
+            <div class="caja-menu-vista-info">Información</div>
+            <a href="./carrito.html" class="caja-menu-carrito"><img src="../assets/img/carrito.png" alt="Imagen de Carrito de compras"></a>
+        </div>
+        
+        <!-- Menú hamburguesa -->
+        <nav id="navbar-responsive" class="navbar-responsive">
+            <ul class="navbar-responsive">
+                <li class="caja-menu"><a href="../index.html">Inicio</a></li>
+                <li class="caja-menu"><a href="./productos.html">Productos</a></li>
+                <li class="caja-menu"><a href="./servicios.html">Servicios</a></li>
+                <li class="caja-menu"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+    
+    <!-- <header class="header"> 
+         Header Viejo
+        <div class="contenedor-ltf">  logo, titulo y frase  
+                <a href="../index.html">
+                    <img class="logo" src="../assets/img/logo.png" alt="logo">
+                </a>
+            <div class="contenedor-tf">
+                <p class="titulo-sitio">VERDE & DECORACIÓN</p>
+                <p class="frase-sitio">Naturaleza verde, diseño que inspira...</p>
+            </div>
+        </div> 
+                    barra de menu 
+             <nav>
                 <ul class="navbar">
-                    <div class="caja-menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                </div>
-                    <div class="caja-menu">
-                    <li><a href="./productos.html">Productos</a></li>
-                </div>
-                    <div class="caja-menu">
-                    <li><a href="./servicios.html">Servicios</a></li>
-                </div>
-                    <div class="caja-menu-vista">
-                    <li><a href="#">Información</a></li>
-                </div>
-                    <div class="caja-menu">
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </div>
-                    <div>
-                    <li><a href="./carrito.html"><img src="../assets/img/carrito.png" alt="Imagen de Carrito de compras"></a></li> 
-                </div>
+                    <li class="caja-menu"><a href="../index.html">Inicio</a></li>
+                    <li class="caja-menu"><a href="./productos.html">Productos</a></li>
+                    <li class="caja-menu"><a href="./servicios.html">Servicios</a></li>
+                    <li class="caja-menu-vista"><a href="#">Información</a></li>
+                    <li class="caja-menu"><a href="./contacto.html">Contacto</a></li>
+                    <li class="caja-menu-carrito"><a href="./carrito.html"><img src="../assets/img/carrito.png" alt="Imagen de Carrito de compras"></a></li> 
                 </ul>
             </nav>
-        </div>
-    </header>
+        
+    </header> -->
 </body>
 <!-- main -->
-<main>
+<main class="grid-container">
+    
     <section class="menu-izq-info">
-
         <ul class="ul-menu-izq-info">
-            
-            <li>
-                <a href="#Envios">Envíos</a>
-            </li>
-            
-            <li>
-                <a href="#Cuidados">Cuidados</a>
-            </li>
+            <li><a href="#Envios">Envíos</a></li>
+            <li><a href="#Cuidados">Cuidados</a></li>
         </ul>
     </section>
+
     <section class="contenedor-info">
     
         <div id="Envios" class="envios">
             <h1> Envíos y Devoluciones</h1>
     
-            <div class="articles-info">
-                <article class="article-info-container">
-                    <div class="article-info-image">
-                        <img src="../assets/img/imagen-std.png" alt="">
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati sed porro eaque quia saepe esse, amet, vero ab recusandae perferendis quam voluptas laboriosam. Optio, amet ut enim velit aspernatur sequi. </p>
+            
+                <article class="articles-envio">
+                    
+                        <img class="article-envio-image" src="../assets/img/camion-de-reparto.png" alt="">
+                    
+                    <div class="article-envio-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsa saepe, sit, nesciunt obcaecati nisi, laborum sint esse suscipit repudiandae odit amet laboriosam mollitia incidunt enim quae veniam molestiae impedit.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis inventore est similique exercitationem, eos deleniti quidem. Cumque dolores ad necessitatibus incidunt, error ipsam natus aperiam molestiae ut reiciendis quod at.</p>
                     </div>
                     
                 </article>
-            </div>
+            
         </div>
         <div id="Cuidados" class="cuidados">
             <h1> Cuidados de las Plantas</h1>
     
-            <div class="articles-info">
-                <article class="article-info-container">
-                    <div class="article-info-image">
-                        <img src="../assets/img/imagen-std.png" alt="">
-                    </div> 
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, animi exercitationem! Laudantium eaque nisi sed, repudiandae minus quos accusantium sapiente, voluptatum quis architecto ullam harum obcaecati! Officiis minus dolor deleniti? </p>
-                    </div>
-                    <div class="recomendaciones">
-                        <div>
-                            <img src="../assets/img/imagen-std.png" alt="">
-                            <h3>Riego</h3>
-                            <p>Riego</p>
-                        </div>
-                        <div>
-                            <img src="../assets/img/imagen-std.png" alt="">
-                            <h3>Malas hierbas</h3>
-                            <p>Corte de hierbas malas</p>
-                        </div>
-                        <div>
-                            <img src="../assets/img/imagen-std.png" alt="">
-                            <h3>Sol</h3>
-                            <p>Tiempo e intensidad de Exposición al Sol</p>
-                        </div>
-                        <div>
-                            <img src="../assets/img/imagen-std.png" alt="">
-                            <h3>Temperatura</h3>
-                            <p>Temperatura</p>
-                        </div>
-                    </div>
+            <div class="articles-cuidados">
+
+                <article class="article-info-1">
+                    
+                        <img class="rec-img-1" src="../assets/img/riego.png" alt="riego">
+                        <h2 class="rec-titulo-1">Riego</h2>
+                        <p class="rec-texto-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quo placeat error. Fugit vitae laudantium libero, inventore ex earum commodi quos tempore et praesentium, at quisquam, eum velit odio magni.</p>
                 </article>
+
+                <article class="article-info-2">
+                    <img class="rec-img-2" src="../assets/img/mala-hierba.png" alt="malas hierbas">
+                    <h2 class="rec-titulo-2">Malas hierbas</h2>
+                    <p class="rec-texto-2">Corte de hierbas malas. <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur veritatis excepturi id ullam quam illum, perspiciatis possimus error vel sint debitis porro explicabo placeat ea obcaecati ducimus sed, amet odit.</p>
+                </article>
+
+                <article class="article-info-3">
+                    <img class="rec-img-3" src="../assets/img/luz-del-sol.png" alt="luz del sol">            
+                    <h2 class="rec-titulo-3">Sol</h2>                  
+                    <p class="rec-texto-3">Tiempo e intensidad de Exposición al Sol 
+                        <br> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam,</p>
+     
+
+                    </article>
+                <article class="article-info-4">
+                    <img  class="rec-img-4" src="../assets/img/termometro.png" alt="termometro">
+                    <h2 class="rec-titulo-4">Temperatura</h2>
+                    <p class="rec-texto-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo recusandae unde quasi, corrupti saepe sapiente dolore a aut similique ducimus earum labore. Doloribus harum deserunt quisquam voluptates similique cumque obcaecati.</p>
+                </article>
+                
             </div>
         </div>
     
@@ -126,39 +163,36 @@
     </section>
 </main>
 <!-- footer -->
-<footer>
-    <div class="footer">
-        <div class="boton-inicio">
-            <a href="../index.html">Inicio</a>
+    <footer>
+        <div class="footer">
+            <div class="boton-inicio">
+                <a href="../index.html">Inicio</a>
+            </div>
+            <div class="redes">
+                <ul class="links">
+                    <div>
+                        <li>
+                            <a href="https://www.instagram.com/"><img src="../assets/img/instagram.png" alt="Icono de Instagram"></a>
+                        </li> 
+                    </div>
+                    <div>
+                        <li>
+                            <a href="https://www.facebook.com/"><img src="../assets/img/facebook.png" alt="Icono de Facebook"></a>
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <a href="https://x.com/home"><img src="../assets/img/x.png" alt="Icono de X"></a>
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <a href="https://wa.me/1XXXXXXXXXX"><img src="../assets/img/whatsapp.png" alt="Icono de Whatsapp"></a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="redes">
-            <ul class="links">
-                <div>
-                    <li>
-                        <a href="https://www.instagram.com/"><img src="../assets/img/instagram.png" alt="Icono de Instagram"></a>
-                    </li> 
-                </div>
-                <div>
-                    <li>
-                        <a href="https://www.facebook.com/"><img src="../assets/img/facebook.png" alt="Icono de Facebook"></a>
-                    </li>
-                </div>
-                <div>
-                    <li>
-                        <a href="https://x.com/home"><img src="../assets/img/x.png" alt="Icono de X"></a>
-                    </li>
-                </div>
-                <div>
-                    <li>
-                        <a href="https://wa.me/1XXXXXXXXXX"><img src="../assets/img/whatsapp.png" alt="Icono de Whatsapp"></a>
-                    </li>
-                </div>
-            </ul>
-        </div>
-    </div>
- </footer>
+    </footer>
 
-<!-- <a href="https://www.flaticon.es/iconos-gratis/servicio-de-calidad" title="servicio de calidad iconos">Servicio de calidad iconos creados por nangicon - Flaticon</a> 
-    <a href="https://www.flaticon.es/iconos-gratis/apoyo" title="apoyo iconos">Apoyo iconos creados por monkik - Flaticon</a>
-    <a href="https://www.flaticon.es/iconos-gratis/trayectoria-profesional" title="trayectoria profesional iconos">Trayectoria profesional iconos creados por VectorPortal - Flaticon</a> -->
 </html>
